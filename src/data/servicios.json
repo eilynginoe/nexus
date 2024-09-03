@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "nombre": "Diseño e Implementación de Sistemas de Control",
+      "descripcion": "Creamos y ponemos en marcha sistemas de control personalizados que optimizan la supervisión y gestión de procesos industriales. Desde la concepción hasta la ejecución, nos aseguramos de que cada solución se adapte a las necesidades específicas de los usuarios, facilitando un flujo de trabajo más eficiente y eficaz.",
+      "categoria":"CONSULTORIA Y DISEÑO"
+    },
+    {
+        "id": 2,
+        "nombre": "Ingeniería de Proyectos",
+        "descripcion": "Gestionamos la ingeniería completa de tus proyectos de automatización, desde la planificación inicial hasta la ejecución. Nuestro enfoque integral garantiza que cada fase del proyecto esté alineada con tus objetivos y requisitos técnicos, , garantizando una implementación que se ajuste a las necesidades operativas de tu equipo.",
+        "categoria":"CONSULTORIA Y DISEÑO"
+      },
+      {
+        "id": 3,
+        "nombre": "Consultoría y Optimización de Procesos",
+        "descripcion": "Ofrecemos asesoramiento experto para analizar y mejorar tus procesos industriales. Identificamos áreas de mejora y diseñamos estrategias para optimizar el rendimiento, reducir costos y aumentar la eficiencia.",
+        "categoria":"CONSULTORIA Y DISEÑO"
+      },
+      {
+        "id": 4,
+        "nombre": "Integración de Sistemas",
+        "descripcion": "Conectamos y sincronizamos diversos sistemas y tecnologías para asegurar una operación fluida y coherente. Nuestro servicio de integración garantiza que tus sistemas trabajen juntos de manera eficiente y sin problemas.",
+        "categoria":"CONSULTORIA Y DISEÑO"
+      },
+    {
+      "id": 5,
+      "nombre": "Automatización de Procesos",
+      "descripcion": "Implementamos soluciones de automatización que transforman y optimizan tus procesos industriales. Desde la instalación de hardware hasta la programación de software, nos aseguramos de que nuestras soluciones sean accesibles y fáciles de usar, mejorando la eficiencia operativa de tu equipo.",
+      "categoria":"IMPLEMENTACION Y PUESTA EN MARCHA"
+    },
+    {
+        "id": 6,
+        "nombre": "Robótica Industrial",
+        "descripcion": "Integramos sistemas de robótica industrial para mejorar la productividad y precisión en tus líneas de producción. Nuestros robots están diseñados para adaptarse a tus necesidades específicas y aumentar la eficiencia operativa.",
+        "categoria":"IMPLEMENTACION Y PUESTA EN MARCHA"
+      },
+      {
+        "id": 7,
+        "nombre": "Control de Motores y Variadores de Frecuencia",
+        "descripcion": "Instalamos y configuramos sistemas avanzados para el control de motores y variadores de frecuencia, mejorando el rendimiento y la eficiencia energética de tus equipos industriales. Aseguramos una implementación que optimiza el funcionamiento de tus sistemas y facilita su manejo.",
+        "categoria":"IMPLEMENTACION Y PUESTA EN MARCHA"
+      },
+      {
+        "id": 8,
+        "nombre": "Puesta en Marcha y Validación",
+        "descripcion": "Nos encargamos de la puesta en marcha y validación de tus sistemas automatizados, asegurando que funcionen correctamente antes de su operación completa. Aseguramos que cada sistema funcione correctamente y esté listo para la operación completa, minimizando posibles inconvenientes.",
+        "categoria":"IMPLEMENTACION Y PUESTA EN MARCHA"
+      },
+    {
+      "id": 9,
+      "nombre": "Mantenimiento Preventivo y Correctivo",
+      "descripcion": "Proporcionamos servicios de mantenimiento para prevenir fallos y reparar cualquier problema que surja en tus sistemas de automatización. Nuestro enfoque proactivo minimiza el tiempo de inactividad y asegura un funcionamiento continuo",
+      "categoria":"MANTENIMIENTO Y SOPORTE"
+    },
+    {
+        "id": 10,
+        "nombre": "Soporte Técnico Remoto y en Sitio",
+        "descripcion": "Ofrecemos soporte técnico tanto remoto como en sitio para resolver cualquier problema que puedas enfrentar. Nuestro equipo está disponible para proporcionar asistencia rápida y efectiva, garantizando el mínimo impacto en tus operaciones.",
+        "categoria":"MANTENIMIENTO Y SOPORTE"
+      },
+      {
+        "id": 11,
+        "nombre": "Retrofit y Actualización de Sistemas",
+        "descripcion": "Realizamos actualizaciones y modernizaciones en tus sistemas existentes para mejorar su rendimiento y funcionalidad. Adaptamos las soluciones más recientes para que tus equipos sigan siendo competitivos y eficientes.",
+        "categoria":"MANTENIMIENTO Y SOPORTE"
+      },
+      {
+        "id": 12,
+        "nombre": "Sistemas de Monitoreo y Análisis de Datos",
+        "descripcion": "Implementamos sistemas avanzados para el monitoreo y análisis de datos, permitiéndote obtener información en tiempo real sobre tus procesos industriales. Utiliza estos datos para tomar decisiones informadas y optimizar tus operaciones.",
+        "categoria":"MANTENIMIENTO Y SOPORTE"
+      },
+    {
+      "id": 13,
+      "nombre": "IoT Industrial (IIoT) y Soluciones de Industria 4.0",
+      "descripcion": "Integramos tecnologías de IoT y soluciones de Industria 4.0 para conectar y automatizar tus sistemas industriales. Estas tecnologías mejoran la visibilidad, el control y la eficiencia en tus operaciones.",
+      "categoria":"SERVICIOS ESPECIALIZADOS"
+    },
+    {
+        "id": 14,
+        "nombre": "Seguridad Industrial",
+        "descripcion": "Implementamos soluciones de seguridad industrial para proteger tus instalaciones y personal. Garantizamos que tus sistemas cumplan con las normativas de seguridad y funcionen de manera segura y confiable.",
+        "categoria":"SERVICIOS ESPECIALIZADOS"
+      },
+      {
+        "id": 15,
+        "nombre": "Sistemas de Visión Artificial",
+        "descripcion": "Instalación y programación de sistemas de visión artificial para control de calidad. Aplicaciones de visión artificial en clasificación, identificación y ensamblaje de piezas. ",
+        "categoria":"SERVICIOS ESPECIALIZADOS"
+      },
+      {
+        "id": 16,
+        "nombre": "Servicios de Capacitación",
+        "descripcion": " Nuestros cursos incluyen formación práctica y teórica sobre la operación, mantenimiento y optimización de tecnologías avanzadas. Aseguramos que tu personal adquiera las habilidades necesarias para maximizar el rendimiento de tus sistemas y adaptarse rápidamente a nuevas tecnologías.",
+        "categoria":"SERVICIOS ESPECIALIZADOS"
+      }
+    
+  ]

@@ -1,0 +1,104 @@
+<section class="container-nosotros">
+    <h2 class="titulo-nosotros">¿Por Qué Nosotros?</h2>
+    <div class="lista-nosotros">
+        <ul>
+            <li class="item-nosotros">Experiencia en la Industria: Contamos con una sólida trayectoria y conocimiento profundo del sector.</li>
+            <li class="item-nosotros">Enfoque en el Ser Humano: Cada solución está diseñada pensando en cómo mejorar la vida de quienes la usan.</li>
+            <li class="item-nosotros">Innovación con Propósito: No solo lideramos en tecnología, sino que cada avance está alineado con el fortalecimiento del talento humano.</li>
+            <li class="item-nosotros">Compromiso con tu Éxito: Colaboramos contigo para entender tus necesidades y las de tu equipo.</li>
+            <li class="item-nosotros">Adaptación Personalizada: Nuestras soluciones de automatización se adaptan para ser eficientes y accesibles.</li>
+            <li class="item-nosotros">Simplicidad y Usabilidad: Aseguramos que cada tecnología sea fácil de usar y se integre de manera fluida en tu entorno de trabajo.</li>
+        </ul>
+    </div>
+    <div class="contenedor-boton">
+        <a href="/productos" class="btn-decorativo">Conoce Más</a>
+    </div>
+</section>
+
+<style>
+.container-nosotros {
+    margin: 5rem 0;
+    padding: 2rem;
+    background-color: #E4E4E4;
+}
+
+.titulo-nosotros {
+    text-align: center;
+    font-family: "Dosis", sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.lista-nosotros{
+    margin: 0 auto;
+    justify-content: center;
+    width: 65vw;
+}
+
+.lista-nosotros ul {
+    font-weight: 600;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr; /* 1 columna por defecto (pantallas pequeñas) */
+    grid-gap: 2rem;
+}
+
+.item-nosotros {
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    color: #333;
+    padding-left: 30px;
+    position: relative;
+}
+
+.item-nosotros::before {
+    content: "✓";
+    font-size: 24px;
+    color: #A40000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-10%);
+}
+
+
+@media (min-width: 768px) {
+    .lista-nosotros ul {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas grandes */
+        grid-template-rows: repeat(3, auto); /* 3 filas por columna */
+    }
+}
+
+.contenedor-boton {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.btn-decorativo {
+    display: inline-block;
+    padding: 0.65rem 4.5rem;
+    background-color: #A40000;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Dosis", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 15px;
+}
+
+.btn-decorativo:hover {
+    background-color: #505050;
+    transform: scale(1.15);
+}
+
+@media (min-width: 1025px) {
+    .lista-nosotros{
+    width: 50vw;
+}
+}
+</style>

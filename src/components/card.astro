@@ -1,0 +1,262 @@
+---
+const { id, nombre, descripcion, item1, item2, item3, backgroundImage } =
+    Astro.props;
+---
+
+<section class="card-container">
+    <div class="card" style={`background-image: url(${backgroundImage})`}>
+        <!-- Toggle checkbox -->
+        <input type="checkbox" id={`toggle-${id}`} class="hidden-toggle" />
+
+        <!-- Card Content -->
+        <div class="card-content">
+            <!-- Título que se oculta al hacer clic en la tarjeta -->
+            <h1 class="card-title">{nombre}</h1>
+
+            <!-- Texto y lista que aparecen al hacer clic en la tarjeta -->
+            <div class="card-text-lista">
+                <p class="card-text">{descripcion}</p>
+                <ul>
+                    <li>{item1}</li>
+                    <li>{item2}</li>
+                    <li>{item3}</li>
+                </ul>
+            </div>
+
+            <!-- Toggle circle (botón clicable) -->
+            <label for={`toggle-${id}`} class="circle"></label>
+
+            <!-- Enlace en la parte inferior derecha del contenido -->
+            <a href="#" data-modal-id={`modal-${id}`} class="card-link" onclick={`openModal(event, 'modal-${id}')`}>Descubre cómo!</a>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        padding-top: 3rem;
+    }
+
+    .card {
+        min-width: 280px;
+        max-width: 400px;
+        height: 300px;
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .hidden-toggle {
+        display: none;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition:
+            opacity 0.8s ease,
+            transform 1.5s ease;
+    }
+
+    .card-link {
+    font-family: "Dosis", sans-serif;
+    font-weight: 700;
+    position: absolute; /* Posiciona el enlace absolutamente dentro de .card-content */
+    bottom: -10px; /* Ajusta la distancia desde el borde inferior */
+    right: -10px;  /* Ajusta la distancia desde el borde derecho */
+    color: #A40000;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    display: none; /* Oculta el enlace por defecto */
+}
+
+    .card-link:hover {
+        background:#505050;
+        color: white;
+    }
+
+    .card-title {
+        width: 150%;
+        font-family: "Fjalla One", sans-serif;
+        font-size: 20px;
+        color: black;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-text-lista {
+        opacity: 0;
+        transition:
+            opacity 0.8s ease,
+            transform 1.5s ease;
+        display: none;
+        text-align: left;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        width: 95%;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 0;
+    }
+
+    ul li {
+        font-family: "Dosis", sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        margin-top: 0.5rem;
+        color: #3c3c3c;
+    }
+
+    .hidden-toggle:checked ~ .card-content .card-title{
+        opacity: 1;
+        transform: translate(-50%, -260%) scale(0.8);
+    }
+
+    .hidden-toggle:checked ~ .card-content .card-text-lista{
+        opacity: 1;
+        transform: translate(-50%, -55%);
+        display: block;
+    }
+
+    .hidden-toggle:checked ~ .card-content .card-link {
+    display: inline-block; /* Muestra el enlace cuando el checkbox está marcado */
+}
+
+    .circle {
+        position: absolute;
+        bottom: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(164, 0, 0);
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        transform: scale(1.2);
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+
+    .circle:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .hidden-toggle:checked ~ .circle {
+        display: none;
+    }
+
+    .circle::after,
+    .circle::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30px; /* Tamaño del círculo */
+        height: 30px; /* Tamaño del círculo */
+        border-radius: 50%;
+        z-index: -1;
+        animation: grow 2s ease-in-out infinite;
+    }
+
+    .circle::after {
+        background: rgba(255, 95, 122, 0.4);
+    }
+
+    .circle::before {
+        background: rgba(255, 95, 122, 0.6);
+        animation-delay: -0.5s;
+    }
+
+
+    @keyframes grow {
+        0% {
+            transform: scale(1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale(3); /* Tamaño de expansión del círculo */
+            opacity: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .card-text-lista {
+            width: 95%;
+        }
+        .card-container {
+            width: 100%;
+        }
+        .card {
+            max-width: 450px;
+            height: 250px;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            line-height: 40px;
+            font-size: 1rem;
+        }
+
+        .circle::after,
+        .circle::before {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .card-text-lista {
+            width: 100%;
+        }
+        .hidden-toggle:checked ~ .card-content .card-title {
+            transform: translate(-50%, -260%) scale(0.8);
+        }
+    }
+</style>

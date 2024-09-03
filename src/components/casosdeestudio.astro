@@ -1,0 +1,223 @@
+<section class="container-exito">
+    <div class="container-content">
+        <h2 class="title-exito">CASOS DE ESTUDIO</h2>
+        <div class="casos">
+            <div class="caso1">
+                <img
+                    class="imagen-estudio"
+                    src="/img/panel-de-control1.jpg"
+                    alt="imagen de caso de exito"
+                />
+                <h4 class="titulo-caso-estudio">
+                    Baja Eficiencia y Errores Recurrentes en Fábrica de
+                    Componentes Electrónicos
+                </h4>
+                <p class="descripcion-caso">
+                    Una fábrica de componentes electrónicos enfrentaba problemas
+                    de baja eficiencia y errores frecuentes en la línea de
+                    montaje debido a interfaces de usuario mal diseñadas y
+                    procesos manuales complejos. Los trabajadores tenían que
+                    lidiar con paneles de control confusos y poco intuitivos, lo
+                    que conducía a errores humanos costosos y tiempos muertos.
+                </p>
+                <p class="descripcion-caso">
+                    <strong>Solución HCD:</strong> Se rediseñaron los sistemas de control con interfaces más intuitivas,
+                    simplificando la interacción humano-máquina. Las interfaces fueron
+                    creadas con el input directo de los operarios, priorizando la
+                    facilidad de uso y la reducción de errores. Esto resultó en un
+                    aumento del 20% en la eficiencia operativa y una drástica reducción
+                    en los errores de la línea de montaje.
+                </p>
+            </div>
+            <div class="caso2">
+                <img
+                    class="imagen-estudio"
+                    src="/img/estacion-de-trabajo.jpg"
+                    alt="imagen de caso de exito"
+                />
+                <h4 class="titulo-caso-estudio">
+                    Altas Tasa de Lesiones Musculoesqueléticas en una Planta
+                    Automotriz
+                </h4>
+                <p class="descripcion-caso">
+                    Una planta automotriz reportaba altos índices de lesiones
+                    musculoesqueléticas entre sus empleados debido a movimientos
+                    repetitivos y tareas físicamente exigentes que no
+                    consideraban la ergonomía. Los trabajadores se quejaban de
+                    fatiga y dolor, lo que aumentaba las bajas laborales y
+                    afectaba la producción.
+                </p>
+                <p class="descripcion-caso">
+                    <strong>Solución HCD:</strong> Se rediseñaron las estaciones
+                    de trabajo teniendo en cuenta la ergonomía y la comodidad
+                    del trabajador. Las tareas repetitivas se automatizaron
+                    parcialmente, mientras que las áreas donde los operarios
+                    interactúan con las máquinas se optimizaron para reducir la
+                    fatiga. Como resultado, las lesiones laborales disminuyeron
+                    en un 30% y se observó una mayor satisfacción en el entorno
+                    laboral.
+                </p>
+            </div>
+            <div class="caso3">
+                <img
+                    class="imagen-estudio"
+                    src="/img/panel-de-control.jpg"
+                    alt="imagen de caso de exito"
+                />
+                <h4 class="titulo-caso-estudio">
+                    Falta de Seguridad en la Operación de Máquinas Complejas en
+                    una Industria Química
+                </h4>
+                <p class="descripcion-caso">
+                    En una industria química, los operadores tenían dificultades
+                    para manejar máquinas complejas y peligrosas debido a la
+                    falta de una formación adecuada y la inexistencia de
+                    indicadores de seguridad claros. Los incidentes relacionados
+                    con la seguridad aumentaban, provocando paradas de
+                    producción y altos costos.
+                </p>
+                <p class="descripcion-caso">
+                    <strong>Solución HCD:</strong> El rediseño centrado en el
+                    humano abordó tanto las interfaces de las máquinas como el
+                    sistema de capacitación. Se introdujeron pantallas de
+                    control con indicadores visuales claros y avisos que
+                    anticipaban riesgos potenciales. Además, se crearon
+                    programas de formación basados en simulaciones reales. Esto
+                    redujo los incidentes de seguridad en un 40%, además de
+                    proporcionar a los empleados mayor confianza en el manejo de
+                    la maquinaria.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container-exito {
+        width: 100%;
+        background-color: white;
+        padding: 3rem 5px 3rem 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-content {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title-exito {
+        font-family: "Fjalla One", sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .casos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caso1,
+    .caso2,
+    .caso3 {
+        width: 100%;
+        min-height: 85vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0.5px solid grey;
+    }
+
+    .imagen-estudio {
+        width: 60vw;
+        margin-top: 1rem;
+    }
+
+    .titulo-caso-estudio {
+        margin-top: 15px;
+        font-family: "Dosis", sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .descripcion-caso {
+        font-size: 18px;
+        margin-top: 15px;
+        line-height: 1.2;
+    }
+
+    strong {
+        font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+        .caso1,
+        .caso2,
+        .caso3 {
+            width: 70vw;
+            min-height: 65vh;
+        }
+
+        .imagen-estudio {
+            width: 50vw;
+            margin-top: 2rem;
+        }
+
+    }
+
+    @media (min-width: 1200px) {
+        .casos {
+            width: 90vw;
+            height:95vh ;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .caso1,
+        .caso2,
+        .caso3 {
+            width: 75vw;
+            height: 95vh;
+            justify-content:flex-start;
+            border-left: 0.5px solid gray;
+
+        }
+
+        .caso3 {
+            border-right: 0.5px solid gray;
+
+        }
+
+        .imagen-estudio {
+            width: 20vw;
+            margin-top: 1rem;
+        }
+
+        .titulo-caso-estudio {
+            width: 25vw;
+        }
+
+    .descripcion-caso {
+        width: 25vw;
+        margin-bottom: 15px;
+    }
+}
+
+    @media (min-width: 1300px) {
+        .caso1,
+        .caso2,
+        .caso3 {
+            height: 80vh;
+        }
+
+    }
+</style>

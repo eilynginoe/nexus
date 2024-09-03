@@ -1,0 +1,83 @@
+[
+    {
+        "id": "modal-1",
+        "titulo": "Innovación sin límites:",
+        "titulo2":"Impulsa tu empresa hacia el futuro con nuestras soluciones personalizadas",
+        "textoIntroductorio": "Al mantenerte a la vanguardia de las tendencias tecnológicas y mejorar continuamente tus procesos, tu negocio puede adaptarse más rápido, ser más eficiente y desarrollar soluciones únicas que impulsen el crecimiento. La innovación sin límites significa que nunca estás restringido por las herramientas actuales; siempre puedes avanzar hacia algo mejor y más efectivo.",
+        "parrafo": "Para alcanzar este nivel de innovación continua, ofrecemos una variedad de servicios clave:",
+        "lista": ["Diseño e Implementación de Sistemas de Control", "Automatización de Procesos", "Soluciones de Industria 4.0"],
+        "textoConclusion": "Estos servicios brindan soluciones adaptables que se ajustan a las necesidades específicas de tu negocio. Al integrar estas tecnologías, no solo modernizamos tus operaciones, sino que también optimizamos cada aspecto de tu producción, garantizando que siempre estés un paso adelante de la competencia.",
+        "botonTexto": "Contáctanos"
+    },
+    {
+        "id": "modal-2",
+        "titulo": "Tecnología de vanguardia:" ,
+        "titulo2":"Mantén tu negocio en la cima con la última tecnología",
+        "textoIntroductorio": "Invertir en tecnología de vanguardia es esencial para mantener tu negocio competitivo y preparado para el futuro. Al integrar sistemas tecnológicos avanzados, tu empresa puede beneficiarse de una mayor eficiencia, menores tiempos de respuesta y una mejora en la calidad de tus productos o servicios.",
+        "parrafo": "Para garantizar que tu empresa aproveche al máximo las últimas innovaciones, implementamos las mejores soluciones tecnológicas a través de:",
+        "lista": ["Integración de Sistemas", "Control de Motores y Variadores de Frecuencia", "Automatización de Procesos"],
+        "textoConclusion": "Estas soluciones aseguran una transición fluida hacia tecnologías emergentes, minimizando las interrupciones en tu flujo de trabajo y maximizando el rendimiento de tus equipos, mientras mantenemos la simplicidad y facilidad de uso en el proceso",
+        "botonTexto": "Contáctanos"
+    },
+    {
+        "id": "modal-3",
+        "titulo": "Sinergia Humano-Máquina:",
+        "titulo2":"Integra personas y tecnología para maximizar resultados",
+        "textoIntroductorio": "En la era de la automatización, lograr una sinergia perfecta entre empleados y tecnología es clave para el éxito. Mientras las máquinas asumen tareas repetitivas y complejas, el talento humano toma decisiones estratégicas y personaliza las soluciones. Esta sinergia permite mejorar la flexibilidad, optimizar la productividad y resolver problemas con mayor rapidez.",
+        "parrafo": "Para lograr este equilibrio, ofrecemos:",
+        "lista": ["Robótica Industrial", "Capacitación Continua", "Soporte Técnico Remoto y en Sitio"],
+        "textoConclusion": "Nuestro equipo asegura que tus empleados no solo se adapten a la tecnología, sino que también la dominen, facilitando la colaboración entre tecnología y personas para mejorar el rendimiento general de tu negocio.",
+        "botonTexto": "Contáctanos"
+    },
+    {
+        "id": "modal-4",
+        "titulo": "Reducción de costos:",
+        "titulo2":"Optimiza tus operaciones y reduce gastos sin comprometer la calidad",
+        "textoIntroductorio": "La capacidad de reducir costos mientras mantienes altos estándares de calidad permite reinvertir en áreas clave, como la innovación y el desarrollo. Esto no solo fortalece tu posición competitiva, sino que también contribuye a un crecimiento sostenible y a largo plazo. Con un enfoque eficiente, puedes maximizar tus recursos y asegurar que cada inversión tenga el mayor impacto posible en el éxito general de tu negocio.",
+        "parrafo": "Para ayudarte a alcanzar estos objetivos, ofrecemos soluciones específicas como:",
+        "lista": ["Mantenimiento Predictivo", "Retrofit de Sistemas", "Automatización de Procesos"],
+        "textoConclusion": "Estas soluciones están diseñadas para maximizar la eficiencia operativa y reducir costos. Modernizamos y optimizamos tus líneas de producción, eliminando ineficiencias y permitiendo beneficiarte de la automatización sin grandes inversiones iniciales. Esto se traduce en ahorros significativos y una mejora continua en tu rendimiento financiero.",
+        "botonTexto": "Contáctanos"
+    },
+    {
+        "id": "modal-5",
+        "titulo": "Mantenimiento predictivo:",
+        "titulo2":"Anticipa problemas y asegura la continuidad operativa",
+        "textoIntroductorio": "Al anticipar y abordar los problemas antes de que ocurran, tu empresa puede reducir significativamente el tiempo de inactividad, mejorar la vida útil de los equipos y asegurar una operación más estable y eficiente. Además, un enfoque predictivo en el mantenimiento permite planificar intervenciones de manera más estratégica, evitando paradas no planificadas y optimizando el uso de recursos.",
+        "parrafo": "Para garantizar un mantenimiento efectivo y proactivo, ofrecemos servicios especializados como:",
+        "lista": ["Sistemas de Monitoreo y Análisis de Datos", "Mantenimiento Preventivo", "Mantenimiento Correctivo"],
+        "textoConclusion": "Estas soluciones implementan estrategias avanzadas para detectar patrones y predecir posibles fallos, asegurando que tus equipos se mantengan en condiciones óptimas. Esto no solo reduce la necesidad de reparaciones costosas, sino que también mantiene tus operaciones funcionando sin contratiempos, mejorando la eficiencia general de tu empresa.",
+        "botonTexto": "Contáctanos"
+    },
+    {
+        "id": "modal-6",
+        "titulo": "Actualización y soporte continuo:",
+        "titulo2":"Evoluciona constantemente con tecnología actualizada y soporte confiable",
+        "textoIntroductorio": "La tecnología está en constante evolución, y mantenerse actualizado es crucial para evitar la obsolescencia y seguir siendo competitivo. Las actualizaciones regulares aseguran que tus sistemas se mantengan seguros, eficientes y compatibles con las últimas tecnologías. Además, contar con soporte continuo te permite resolver rápidamente cualquier problema técnico, minimizando el impacto en tus operaciones y garantizando una continuidad fluida.",
+        "parrafo": "Para asegurarte de que siempre estés a la vanguardia de la tecnología, ofrecemos:",
+        "lista": ["Retrofit y Actualización de Sistemas", "Soporte Técnico Remoto y en Sitio", "Capacitación Continua"],
+        "textoConclusion": "Estos servicios te permiten modernizar tus sistemas, recibir asistencia técnica oportuna y preparar a tu equipo para enfrentar cualquier desafío tecnológico. Esto asegura que tus sistemas funcionen de manera óptima y te mantengas al día con las últimas innovaciones, garantizando el mejor rendimiento a largo plazo.",
+        "botonTexto": "Contáctanos"
+    },
+    {
+        "id": "modal-7",
+        "titulo": "Cumplimiento y seguridad:",
+        "titulo2":"Protege a tu equipo y garantiza operaciones seguras y conformes",
+        "textoIntroductorio": "El cumplimiento normativo y la seguridad industrial son aspectos críticos para proteger tanto a los empleados como a las instalaciones. Más allá de la simple adhesión a normas, una estrategia robusta de seguridad industrial puede impulsar la eficiencia operativa mediante la reducción de accidentes y la mejora de procesos. Implementar medidas de seguridad adecuadas puede también prolongar la vida útil de los equipos, reducir costos asociados con daños y paradas inesperadas, y fomentar un ambiente laboral positivo y proactivo.",
+        "parrafo": "Para cumplir con los más altos estándares de seguridad y protección, ofrecemos servicios especializados como:",
+        "lista": ["Sistemas de Monitoreo", "Soluciones Avanzadas de Seguridad Operacional", "Diseño e Implementación de Sistemas de Control"],
+        "textoConclusion": "Texto de conclusión del modal 2",
+        "botonTexto": "Contáctanos"
+    },
+    {
+        "id": "modal-8",
+        "titulo": "Enfoque centrado en el cliente:",
+        "titulo2":"Soluciones hechas a medida para asegurar tu éxito",
+        "textoIntroductorio": "Al colaborar estrechamente con nuestros clientes, nos enfocamos en descubrir oportunidades para mejoras adicionales y adaptaciones que maximicen el impacto positivo de las soluciones implementadas. Este enfoque personalizado no solo fortalece la relación, transformándola de un simple proveedor-cliente a una verdadera asociación, sino que también impulsa el crecimiento y el éxito compartido a largo plazo.",
+        "parrafo": "Para ofrecer un enfoque realmente adaptado a tus necesidades, te proporcionamos:",
+        "lista": ["Consultoría y Optimización de Procesos", "Ingeniería de Proyectos", "Soporte Técnico Personalizado"],
+        "textoConclusion": "Estos servicios facilitan una colaboración estrecha, permitiendo el diseño y la ejecución de soluciones personalizadas que maximizan el valor y aseguran que los resultados se alineen con tus metas empresariales a largo plazo.",
+        "botonTexto": "Contáctanos"
+    }
+]
+

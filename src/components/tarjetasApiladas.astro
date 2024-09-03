@@ -1,0 +1,218 @@
+---
+
+---
+
+<section class="container">
+    <div id="cards">
+        <div class="card card__1">
+            <div class="card__content card1">
+                <div class="card-text">
+                    <h2 class="titulo-card">
+                        Transformando el Futuro de la Producción
+                    </h2>
+                    <p>
+                        En un mercado global donde la competencia es feroz y las
+                        expectativas son altas, mantenerse a la vanguardia
+                        requiere algo más que buenas intenciones.
+                    </p>
+                    <p>
+                        Para sobresalir en este entorno, es esencial contar con:
+                    </p>
+                    <ul>
+                        <li>
+                            Una <spam class="card-important">visión estratégica</spam> que no solo incluya tecnología, sino también cómo esta puede mejorar la experiencia del usuario y del trabajador.
+                        </li>
+                        <li>
+                            Las <spam class="card-important">herramientas</spam>
+                            y recursos diseñados para ser usados por personas
+                        </li>
+                        <li>
+                            Capacidad de <spam class="card-important"
+                                >adaptación y flexibilidad</spam
+                            >para garantizar que la tecnología se ajuste a las necesidades cambiantes de tus empleados y clientes.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card card__2">
+            <div class="card__content card2">
+                <div class="card-text">
+                    <h2 class="titulo-card">Más Allá de la Tecnología</h2>
+                    <p>
+                        La verdadera revolución no radica únicamente en las máquinas y los algoritmos, sino en cómo estas tecnologías pueden integrarse inteligentemente para mejorar la vida de las personas. Creemos que el éxito en la automatización industrial viene no solo de optimizar procesos, sino de diseñarlos para que sean accesibles, intuitivos y efectivos para los usuarios. 
+                    </p>
+                    <p>
+                        <spam class="card-important"
+                            >Nuestros sistemas no solo optimizan procesos;
+                            transforman la manera en que piensas acerca de tu
+                            negocio.</spam
+                        >
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cards {
+        width: 95%;
+    }
+
+    .card__1 {
+        position: relative; /* Necesario para el uso del pseudo-elemento */
+
+        padding: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        background-image: url("img/egranaje-card.webp"); /* Reemplaza con la ruta de tu imagen */
+        background-size: contain; /* Asegura que la imagen cubra todo el área del contenedor */
+        background-position: left; /* Centra la imagen en el contenedor */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    /* Pseudo-elemento para agregar una capa de opacidad */
+    .card1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.5
+        ); /* Capa blanca con 50% de opacidad */
+        border-radius: 20px;
+        z-index: 1;
+    }
+
+    .card-text {
+        position: relative;
+        z-index: 2; /* Para asegurarte de que el contenido esté por encima de la capa de opacidad */
+    }
+
+    .card__2 {
+        position: relative; /* Necesario para el uso del pseudo-elemento */
+
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        padding-top: 3rem;
+        background-image: url("img/engranaje2.webp"); /* Reemplaza con la ruta de tu imagen */
+        background-size: contain; /* Asegura que la imagen cubra todo el área del contenedor */
+        background-position: right; /* Centra la imagen en el contenedor */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .card2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.5
+        ); /* Capa blanca con 50% de opacidad */
+        border-radius: 20px;
+        z-index: 1;
+    }
+
+    .titulo-card {
+        font-family: "Dosis", sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    p,
+    ul {
+        font-family: "Dosis", sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+
+    ul li {
+        list-style: disc;
+    }
+
+    .card-important {
+        color: #a40000;
+        font-weight: bold;
+    }
+
+    @media (min-width: 950px) {
+    .container {
+        width: 80%; /* Reduce el ancho del contenedor para añadir más margen lateral */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+
+    #cards {
+        width: 60%; /* Reduce el ancho del contenedor de las tarjetas para pantallas grandes */
+    }
+
+    .card__1,
+    .card__2 {
+        padding: 2rem; /* Aumenta el padding para un mejor espaciado interno */
+        margin-top: 4rem; /* Incrementa el margen superior para más separación entre tarjetas */
+        background-size: contain; /* Asegura que la imagen cubra completamente el área del contenedor */
+    }
+
+    .card__2{
+        margin-bottom: 5rem;
+    }
+
+    .card2::before,
+    .card1::before {
+        background-color: rgba(
+            255,
+            255,
+            255,
+            0.1
+        ); /* Capa blanca con 50% de opacidad */
+    }
+
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo-card {
+        font-size: 2.5rem; /* Aumenta el tamaño de la fuente para el título de las tarjetas */
+        margin-bottom: 15px; /* Ajusta el margen inferior para más espacio */
+    }
+
+    p,
+    ul {
+        width: 30vw;
+        font-size: 20px; /* Incrementa el tamaño de la fuente para el contenido de las tarjetas */
+        line-height: 1.5; /* Ajusta la altura de línea para mejor legibilidad */
+    }
+
+    p{
+        width: 30vw;
+    }
+}
+
+</style>

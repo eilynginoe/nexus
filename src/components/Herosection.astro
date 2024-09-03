@@ -1,0 +1,212 @@
+---
+// HeroSection.astro
+
+export interface Props {
+    titulo: string;
+    descripcion1: string; // Primera parte de la descripción
+    descripcion2: string; // Segunda parte de la descripción
+    buttonText: string;
+    imagen: string;
+    altTexto: string;
+}
+
+const { titulo, descripcion1, descripcion2, buttonText, imagen, altTexto } =
+    Astro.props;
+---
+
+<section class="herosection-container">
+    <div class="image-herosection">
+        <img src={imagen} alt={altTexto} class="img-hero" />
+    </div>
+    <div class="intro">
+        <h1 class="titulo-principal">
+            {
+                titulo
+                    .split(" ")
+                    .map((word, index) => (
+                        <span
+                            class={
+                                index % 2 === 0
+                                    ? "color-sweet"
+                                    : "color-delight"
+                            }
+                        >
+                            {word}
+                        </span>
+                    ))
+            }
+        </h1>
+
+        <p class="introduccion">
+            {descripcion1}
+        </p>
+        <p class="introduccion">
+            {descripcion2}
+        </p>
+
+        <div class="contenedor-boton">
+            <a href="/productos" class="btn-decorativo">{buttonText}</a>
+        </div>
+    </div>
+    <div class="container-img-hero">
+        <img src="/img/nombre-inicio.webp" />
+    </div>
+</section>
+
+<style>
+    .herosection-container {
+        display: grid;
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: auto auto auto; /* Tres filas: una para cada sección */
+        align-items: center; /* Alinea verticalmente el contenido */
+        justify-items: center; /* Centra el contenido horizontalmente */
+        margin: 0 auto;
+        width: 100%; /* Ajusta el ancho según tus necesidades */
+        box-sizing: border-box;
+    }
+    
+
+    .intro {
+        grid-column: 1; /* Ocupa toda la columna */
+        grid-row: 2; /* En la segunda fila */
+        text-align: center;
+        max-width: 80vw;
+        box-sizing: border-box;
+    }
+
+    .titulo-principal {
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        width: 80vw;
+        height: auto;
+        line-height: normal;
+    }
+
+    /* Agrupando estilos comunes */
+    .color-sweet,
+    .color-delight {
+        font-family: "Fjalla One", sans-serif;
+        color: black;
+        font-size: 2rem;
+    }
+
+    .introduccion {
+        margin-bottom: 16px; /* Puedes ajustar este valor según lo que necesites */
+        font-size: 1.5rem;
+        line-height: 1.1;
+        letter-spacing: -0.5px; /* Disminuye el espacio entre caracteres */
+        word-spacing: 5px; /* Aumenta el espacio entre palabras */
+    }
+
+    .image-herosection {
+        grid-column: 1 / 2; /* Ocupa la primera columna */
+        grid-row: 1; /* En la primera fila */
+        align-self: center;
+        max-width: 80vw;
+    }
+
+    .container-img-hero {
+        width: 90vw;
+        grid-column: 1; /* Ocupa toda la columna */
+        grid-row: 3; /* En la tercera fila */
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 10px; /* Ajusta el espacio superior si es necesario */
+    }
+
+    /* Agrupando estilos de las imágenes */
+    .image-herosection img,
+    .img-hero {
+        width: 100%; /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+        height: auto;
+    }
+
+    .container-img-hero img{
+        width: 70vw;
+    }
+
+    .img-hero {
+        min-width: 20vw;
+        margin-bottom: 3rem;
+    }
+
+    .contenedor-boton {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Agrupando estilos del botón */
+    .btn-decorativo {
+        font-family: "Dosis", sans-serif;
+        padding: 12px 2rem; /* Simplifica el padding */
+        border-radius: 15px;
+        border: none;
+        background-color: #a40000;
+        color: white;
+        font-weight: bold;
+        transition: transform 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-decorativo:hover {
+        background-color: #505050;
+        transform: scale(1.2);
+    }
+
+    @media (min-width: 900px) {
+    .herosection-container {
+        grid-template-columns: 1fr 1fr; /* Dos columnas: una para la imagen y otra para el texto */
+        grid-template-rows: auto auto; /* Dos filas: una para el texto y la imagen al lado y otra para la imagen inferior */
+    }
+
+    .image-herosection {
+        grid-column: 1 / 2; /* Coloca la primera imagen en la primera columna */
+        grid-row: 1 / 2; /* En la primera fila */
+        max-width: 100%; /* Asegura que la imagen ocupe el ancho disponible */
+    }
+
+    .intro {
+        grid-column: 2 / 3; /* Coloca el texto en la segunda columna */
+        grid-row: 1 / 2; /* En la primera fila */
+        padding: 20px; /* Añade padding para darle más espacio al texto */
+        max-width: 90%; /* Ajusta el ancho máximo del contenedor de texto */
+        margin-left: -20%; /* Mueve el contenedor hacia la izquierda */
+        margin-right: 0; /* Asegura que el margen derecho se mantenga en 0 para evitar que el contenedor se desplace fuera de la vista */
+        box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+    }
+
+    .titulo-principal {
+        line-height: 1.3; /* Ajusta la altura de línea para que el texto respire más */
+        width: 100%; /* Asegura que el título ocupe todo el ancho disponible dentro del contenedor */
+        margin: 0 auto; /* Centra el título */
+    }
+
+    .color-sweet,
+    .color-delight {
+        color: black;
+        font-size: 3.5vw; /* Tamaño aumentado para pantallas grandes */
+    }
+
+    .introduccion {
+        font-size: 1.75rem; /* Equivalente a 28px (28px / 16 = 1.75rem) */
+        line-height: 1.5; /* Ajusta la altura de línea para mejor legibilidad */
+    }
+
+    .container-img-hero {
+        grid-column: 1 / 3; /* Ocupa ambas columnas */
+        grid-row: 2 / 3; /* Coloca la imagen en la segunda fila */
+        margin-top: 2rem; /* Añade un espacio superior */
+        text-align: center; /* Centra la imagen */
+    }
+
+    .container-img-hero img {
+        max-width: 30vw; /* Reduce un poco el tamaño de la imagen para que no sea tan dominante */
+    }
+}
+
+</style>

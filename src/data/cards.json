@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "nombre": "Innovación sin límites",
+    "descripcion": "La innovación es un factor clave para diferenciarse en un mercado altamente competitivo. Te permite:",
+    "item1":"Impulsar el crecimiento",
+    "item2":"Mejor adaptación a los cambios",
+    "item3":"Ser más eficiente"
+  },
+  {
+    "id": 2,
+    "nombre": "Tecnología de vanguardia",
+    "descripcion": "La tecnología avanzada también permite optimizar la productividad sin comprometer la estabilidad ni la seguridad de tus operaciones. Sus beneficios son:",
+    "item1":"Mayor eficiencia",
+    "item2":"Menores tiempos de respuesta",
+    "item3":"Mejora en la calidad de tus productos"
+  },
+  {
+    "id": 3,
+    "nombre": "Sinergia Humano-Máquina",
+    "descripcion": "Las máquinas pueden asumir tareas repetitivas y complejas, pero es el talento humano quien toma decisiones estratégicas y personaliza las soluciones. Tu empresa puede:",
+    "item1":"Mejorar su flexibilidad",
+    "item2":"Optimizar la productividad",
+    "item3":"Resolver problemas con mayor rapidez"
+  },
+  {
+    "id": 4,
+    "nombre": "Reducción de costos",
+    "descripcion": "Un enfoque estratégico en la reducción de costos puede significar la diferencia entre el éxito y el estancamiento. Al optimizar los procesos, tu empresa puede:",
+    "item1":"Lograr una mayor rentabilidad y estabilidad a largo plazo.",
+    "item2":"Mejor adaptación a los cambios",
+    "item3":"Ser más eficiente"
+  },
+  {
+    "id": 5,
+    "nombre": "Mantenimiento predictivo",
+    "descripcion": "El mantenimiento predictivo es crucial para evitar fallos inesperados que pueden interrumpir la producción y generar altos costos de reparación. Sus beneficios son:",
+    "item1":"Reducir el tiempo de inactividad",
+    "item2":"Mejorar la vida útil de los equipos",
+    "item3":"Asegurar una operación más estable y eficiente"
+  },
+  {
+    "id": 6,
+    "nombre": "Actualización y soporte continuo",
+    "descripcion": "Mantenerse actualizado es esencial para evitar la obsolescencia y seguir siendo competitivo. Contar con soporte continuo significa: ",
+    "item1":"Cualquier problema técnico puede ser resuelto rápidamente.",
+    "item2":"Se minimiza el impacto en tus operaciones",
+    "item3":"Garantizas funcionamiento optimo y efeciciencia"
+  },
+  {
+    "id": 7,
+    "nombre": "Cumplimiento y seguridad",
+    "descripcion": "Garantizar un entorno de trabajo seguro no solo minimiza riesgos y responsabilidades, sino que también mejora la confianza y la eficiencia en tus operaciones. cumplir con los estándares y regulaciones asegura:",
+    "item1":"Evitar sanciones costosas",
+    "item2":"Operar sin interrupciones",
+    "item3":"Ser más eficiente"
+  },
+  {
+    "id": 8,
+    "nombre": "Enfoque centrado en el cliente",
+    "descripcion": "Nuestro equipo se compromete a ofrecerte un valor máximo, asegurando que cada proyecto esté alineado con tus necesidades específicas y te brinde los mejores resultados.",
+    "item1":"Impulsar el crecimiento",
+    "item2":"Mejor adaptación a los cambios",
+    "item3":"Ser más eficiente"
+  }
+]

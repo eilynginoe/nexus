@@ -1,0 +1,87 @@
+---
+export interface Props {
+    title: string;
+    paragraphs: string[]; // Cambiado a un array de cadenas
+}
+
+const { title, paragraphs } = Astro.props;
+---
+
+<section class="introduccion">
+    <div class="container-intro">
+        <h2 class="titulo-intro">{title}</h2>
+        {paragraphs.map((paragraph, index) => (
+            <p class="intro-content" set:html={paragraph}></p>
+        ))}
+    </div>
+</section>
+
+<style>
+    .introduccion {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 4rem 20px;
+        background-color: #505050;
+        display: block;
+        line-height: 1.1;
+    }
+
+    .container-intro {
+        color: white;
+        width: 90%;
+        box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total del elemento */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+
+    .titulo-intro {
+        width: 100%;
+        font-family: "Dosis", sans-serif;
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 1.2rem; /* Elimina el margen para ajustar el espaciado */
+
+    }
+
+    .intro-content{
+        width: 100%; /* Cambia el ancho a 100% para que el texto ocupe el ancho completo del contenedor */
+        margin-top: 10px;
+        line-height: 1.3;
+        font-size: 18px;
+        font-weight:200;
+    }
+
+    .intro-content strong{
+        font-weight: bold;
+    }
+
+    @media (min-width: 950px) {
+    .introduccion {
+        padding: 4rem 40px; /* Aumenta el padding para pantallas grandes */
+        line-height: 1.5; /* Incrementa la altura de línea para mejorar la legibilidad */
+    }
+
+    .container-intro {
+        width: 50%; /* Reduce el ancho del contenedor para dejar más margen lateral */
+        margin: 0 auto; /* Mantiene el centrado del contenedor */
+        padding: 2rem;
+    }
+
+    .titulo-intro {
+        font-size: 2.5vw; /* Aumenta el tamaño de la fuente del título */
+        margin-bottom: 1.5rem; /* Incrementa el margen inferior para más espacio */
+        text-align: center;
+    }
+
+    .intro-content {
+        width: 80%;
+        font-size: 20px; /* Aumenta el tamaño de la fuente del contenido */
+        line-height: 1.6; /* Incrementa la altura de línea para mejor legibilidad */
+        padding-bottom: 20px;
+        margin: 0 auto;
+    }
+
+}
+
+
+</style>

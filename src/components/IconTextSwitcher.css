@@ -1,0 +1,113 @@
+.icon-text-switcher{
+  background-color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+}
+
+.contenedor-contenido{
+  width: 90vw;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.contenedor-botones {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+  
+  .icon-button {
+    width: 40vw;
+    font-family: "Dosis", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    border: 0.5px solid #333;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .icon-button.active {
+    background-color: #A40000;
+    color: white;
+  }
+  
+  .icon-button:hover {
+    background-color: #D9D9D9;
+    color: black;
+  }
+  
+  .display{
+    display: flex;
+    flex-direction: column;
+  }
+  .current-text {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .display img {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 50vw;
+    height: 50vw;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) and (max-width:1023px) {
+    .contenedor-contenido{
+      width: 70vw;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    .icon-button {
+      padding: .8rem;
+
+    }
+
+    .display img {
+      width: 30vw;
+      height: 30vw;
+      margin: 0 auto;
+    }
+
+    .current-text {
+      width: 45vw;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.2;
+      margin: 0 auto;
+
+    }
+  }
+
+@media (min-width: 1024px) {
+  .contenedor-contenido{
+    width: 50vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .display img {
+    width: 20vw;
+    height: 20vw;
+    margin: 0 auto;
+  }
+
+  .current-text {
+    width: 35vw;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 auto;
+
+  }
+}
+  

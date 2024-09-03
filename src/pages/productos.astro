@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Herosectionextra from "../components/herosectionextra.astro";
+import Introduccion from "../components/introduccion.astro"
+import Generalservice from "../components/generalservice.astro"
+import Casosdeexito from "../components/casosdeestudio.astro";
+
+const title = "Automatización: Optimiza, Controla y Decide";
+const paragraphs = [
+    "¡Somos tu mejor aliado!",
+    "Especialistas en automatización industrial, empleamos tecnología de punta para mejorar el control y la toma de decisiones en tus operaciones. Sensores, actuadores, PLC y más, están a tu disposición para alcanzar la excelencia. ¡Dale a tu proyecto el impulso que necesita!",
+    ""
+];
+---
+
+<Layout title="Nuestros Productos">
+    <Herosectionextra
+    title="Conoce Nuestros Servicios"
+    text="Descubre el futuro de la automatización industrial con nuestras soluciones avanzadas. Atrévete a transformar tu negocio y mantente a la vanguardia en un mundo en constante evolución"
+    backgroundImage="/img/nuestroservicios.jpg"
+    const buttonText = "Contáctanos";
+    const buttonLink = "/contacto";
+/>
+
+<Introduccion title={title} paragraphs={paragraphs} />
+<Generalservice/>
+<Casosdeexito/>
+
+</Layout>
+
+<style>
+    
+</style>

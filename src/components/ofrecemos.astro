@@ -1,0 +1,100 @@
+---
+import Card from "./card.astro";
+import data from "../data/cards.json";
+---
+
+<section class="card-section">
+    <h2 class="card-titulo">¿Qué Ofrecemos?</h2>
+    <div class="menu-cards">
+        {
+            data.map((item) => (
+                <Card
+                    key={item.id}
+                    id={item.id}
+                    nombre={item.nombre}
+                    descripcion={item.descripcion}
+                    item1={item.item1}
+                    item2={item.item2}
+                    item3={item.item3}
+                    backgroundImage=""/*No muestra imagen de fondo*/
+                />
+            ))
+        }
+    </div>
+    <div class="contenedor-boton">
+        <a href="/productos" class="btn-decorativo">Conoce Nuestros Servicios</a>
+    </div>
+</section>
+
+<style>
+    .card-section {
+        width: 100%;
+        padding-bottom: 6rem;
+        background-color: #505050;
+    }
+
+    .card-titulo {
+        padding-top: 3rem;
+        background-color: #505050;
+        color: white;
+        font-family: "Dosis", sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .menu-cards {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna por defecto (pantallas pequeñas) */
+        gap: 20px;
+        max-width: 70%;
+        margin: 0 auto; /* Centra el contenedor de las tarjetas */
+        justify-content: center; /* Centra las tarjetas dentro del grid */
+    }
+
+    .contenedor-boton {
+        margin-top: 4rem; /* Añade espacio entre las tarjetas y el botón */
+        text-align: center; /* Centra el botón */
+    }
+
+    .btn-decorativo {
+        display: inline-block;
+        padding: 0.7rem 1.1rem;
+        background-color: #ffffff; /* Fondo del botón */
+        color: black;
+        text-decoration: none;
+        font-family: "Dosis", sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+        transition:
+            background-color 0.3s ease,
+            transform 0.2s ease;
+        border-radius: 15px; /* Bordes redondeados */
+    }
+
+    .btn-decorativo:hover {
+        transform: scale(1.15); /* Leve agrandamiento al hacer hover */
+        color: #a40000;
+    }
+
+    @media (min-width: 768px) {
+
+        .menu-cards {
+            max-width: 80%;
+            grid-template-columns: repeat(
+                2,
+                1fr
+            ); /* 2 columnas a partir de 768px */
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .menu-cards {
+
+            grid-template-columns: repeat(
+                4,
+                1fr
+            ); /* 4 columnas en pantallas grandes */
+        }
+    }
+</style>

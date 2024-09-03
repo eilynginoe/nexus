@@ -1,0 +1,127 @@
+---
+interface ModalProps {
+    id: string;
+    titulo: string;
+    titulo2: string;
+    textoIntroductorio: string;
+    parrafo: string;
+    lista: string[];
+    textoConclusion: string;
+    botonTexto: string;
+}
+
+const {
+    id,
+    titulo,
+    titulo2,
+    textoIntroductorio,
+    parrafo,
+    lista,
+    textoConclusion,
+    botonTexto,
+} = Astro.props as ModalProps;
+---
+
+<div class="modal" id={id}>
+    <div class="modal-content">
+        <span class="close-button" onclick={`closeModal('${id}')`}>&times;</span
+        >
+        <div class="titulo">
+            <h2 class="modal-title">{titulo}</h2>
+            <h3 class="modal-title2">{titulo2}</h3>
+        </div>
+        <p class="modal-intro">{textoIntroductorio}</p>
+        <p class="modal-paragraph">{parrafo}</p>
+        <ul class="modal-list">
+            {lista.map((item) => <li>{item}</li>)}
+        </ul>
+        <p class="modal-conclusion">{textoConclusion}</p>
+        <a href="/contacto" class="modal-button">{botonTexto}</a>
+    </div>
+</div>
+
+<style>
+    .modal {
+        display: none; /* Oculto por defecto */
+        position: fixed; /* Fijo en la pantalla */
+        z-index: 1000; /* Asegura que esté en primer plano */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* Permite desplazamiento si el contenido es largo */
+        background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+    }
+
+    .modal-title{
+        font-family: "Fjalla One", sans-serif;
+        font-size: 2rem;
+        color:#A40000;
+        margin-bottom: 1rem;
+    }
+
+    .modal-title2{
+        font-family: "Fjalla One", sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.1;
+        margin-bottom: 0.5rem;
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto; /* Centra el modal vertical y horizontalmente */
+        padding: 20px;
+        border-radius: 5px;
+        width: 80%; /* Ajusta el ancho del modal */
+        max-width: 600px; /* Ajusta el ancho máximo del modal */
+        position: relative; /* Posiciona el contenido del modal */
+    }
+
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .modal-intro,
+    .modal-paragraph,
+    .modal-conclusion {
+        font-size: 18px;
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .modal-list {
+        font-family: "Dosis", sans-serif;
+        list-style-type: disc;
+        padding-left: 20px;
+        margin: 20px 0;
+    }
+
+    .modal-button {
+    background-color: #A40000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: #505050;
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón */
+}
+
+.modal-button:active {
+    transform: scale(0.98); /* Hace que el botón se reduzca ligeramente cuando se hace clic */
+}
+</style>

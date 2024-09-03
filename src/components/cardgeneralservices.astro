@@ -1,0 +1,138 @@
+---
+const { nombre, descripcion } = Astro.props;
+---
+
+<div class="card">
+    <div class="icono-servicio-generales">
+        <img
+            src="/img/servicio-icon.png"
+            alt="Una mano sosteniendo un engranaje"
+        />
+    </div>
+    <h3 class="title-card">{nombre}</h3>
+    <p class="description-card">{descripcion}</p>
+    <div>{Astro.slots.default}</div>
+    <!-- Manejo de `children` -->
+    <a href="/contacto" class="card-cotizacion">Solicita tu Cotización Ahora!</a
+    >
+</div>
+
+<style>
+    .card {
+        max-height: 70vh;
+        min-height: 30vh;
+        border: 1px solid #f0f0f0; /* Gris más claro */
+        border-radius: 8px;
+        padding: 16px;
+        margin: 8px;
+        background-color: #fff;
+        background: linear-gradient(
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 255, 255, 0.5)
+            ),
+            url("img/egranaje-card.webp");
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* Asegura que el contenido se distribuya */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil */
+    }
+
+    .icono-servicio-generales {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: right;
+        padding-bottom: 1rem;
+    }
+
+    .card h3 {
+        width: 90vw;
+        margin: 0;
+        font-family: "Dosis", sans-serif;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    .description-card {
+        width: 90vw;
+        font-family: "Dosis", sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.2;
+        margin-top: 15px;
+    }
+
+    .card-cotizacion {
+        font-family: "Dosis", sans-serif;
+        color: #a40000;
+        font-weight: 600;
+        text-decoration: none;
+        margin-top: 1rem;
+        padding-right: 15px;
+        position: relative; /* Necesario para el efecto de animación */
+
+        /* Animación inicial */
+        display: inline-block;
+        transition: all 0.3s ease-in-out;
+        /* Asegura que el enlace esté al final de la tarjeta */
+        align-self: flex-end;
+    }
+
+    /* Efecto hover */
+    .card-cotizacion:hover {
+        color: #ff4a4a; /* Cambia el color del texto */
+        transform: translateY(-5px) scale(1.2); /* Desplaza ligeramente el texto hacia arriba */
+    }
+
+    /* Subrayado animado en hover */
+    .card-cotizacion::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: #ff4a4a;
+        transition: width 0.4s ease;
+    }
+
+    /* Extiende la línea subrayada en hover */
+    .card-cotizacion:hover::after {
+        width: 100%;
+        left: 0;
+        background: #ff4a4a; /* Cambia el color del subrayado */
+    }
+
+    @media (min-width: 768px) {
+        .card {
+            min-height: 20vh;
+        }
+        .card h3 {
+            width: 40vw;
+            font-size: 26px;
+        }
+
+        .description-card {
+            width: 40vw;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .card {
+            min-height: 35vh;
+        }
+        .card h3 {
+            width: 25vw;
+            font-size: 26px;
+        }
+
+        .description-card {
+            width: 25vw;
+        }
+    }
+</style>

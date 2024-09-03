@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Herosection from "../components/Herosection.astro";
+import TarjetasApiladas from "../components/tarjetasApiladas.astro";
+import React from "react";
+import Introduccion from "../components/introduccion.astro";
+import Ventajas from "../components/ventajas.astro";
+import Intermedio from "../components/intermedio.astro";
+import Ofrecemos from "../components/ofrecemos.astro";
+import Nosotros from "../components/nosotros.astro";
+import BotonesComponent from "../components/IconTextSwitcher.jsx";
+
+import Modal from "../components/modal.astro";
+import ModaJson from "../data/modal.json";
+
+const title =
+  "Revolucionando la Industria con Innovación Centrada en las Personas";
+const paragraphs = [
+  "Bienvenido a un nuevo paradigma donde la tecnología, la precisión y la productividad se encuentran en perfecta sintonía con las necesidades humanas. En la era de la Cuarta Revolución Industrial, el verdadero éxito no solo radica en la velocidad y la precisión de las máquinas, sino en cómo estas herramientas se integran para empoderar a las personas.",
+  "Imagina una fábrica donde cada trabajador puede colaborar fácilmente con sistemas automatizados que se adaptan a su manera de trabajar, donde la tecnología no es una barrera, sino un aliado. Un sistema que no solo detecta errores antes de que se conviertan en problemas, sino que también mejora la experiencia de los operadores, haciéndola más intuitiva y segura.",
+  "¿Cómo cambiaría tu negocio si, además de alcanzar niveles excepcionales de eficiencia, también crearas un entorno de trabajo más humano, creativo y productivo?",
+];
+
+// Define the icons and texts
+// Define los datos para los botones
+const buttons = [
+  {
+    titulo: "CALIDAD GARANTIZADA",
+    icon: "/img/excelencia.webp",
+    text: "Nuestro equipo de expertos está siempre a tu disposición para brindarte el apoyo que necesitas, cuando lo necesitas.",
+  },
+  {
+    titulo: "SOPORTE INIGUALABLE",
+    icon: "/img/veinticuatro-siete.svg",
+    text: "Nuestro equipo de expertos está siempre a tu disposición para brindarte el apoyo que necesitas, cuando lo necesitas.",
+  },
+  {
+    titulo: "TRANSFORMACIÓN SOSTENIBLE",
+    icon: "/img/engranajeswicher.svg",
+    text: "Preparación para un futuro competitivo y sólido, donde la tecnología y el talento humano trabajen en perfecta armonía.",
+  },
+];
+---
+
+<Layout title="Nexus Electrónica e Innovación">
+  <Herosection
+    titulo="Automatización: La Ruta hacia la Eficiencia"
+    descripcion1=""
+    descripcion2="¡Solicita una evaluación sin costo y descubre cómo adaptar la automatización a las necesidades de tu equipo!"
+    buttonText="Diagnóstico Gratis"
+    imagen="/img/robot-inicio.webp"
+    altTexto="Robot industrial"
+  />
+  <Introduccion title={title} paragraphs={paragraphs} />
+  <TarjetasApiladas />
+  <Ventajas />
+  <Intermedio />
+  <Ofrecemos />
+  <Nosotros />
+  <BotonesComponent buttons={buttons} client:load />
+  <section class="modals-container">
+    {
+      ModaJson.map((modal) => (
+        <Modal
+          id={modal.id}
+          titulo={modal.titulo}
+          titulo2={modal.titulo2}
+          textoIntroductorio={modal.textoIntroductorio}
+          parrafo={modal.parrafo}
+          lista={modal.lista}
+          textoConclusion={modal.textoConclusion}
+          botonTexto={modal.botonTexto}
+        />
+      ))
+    }
+  </section>
+  <script src="/services/openModal.js" defer></script>
+</Layout>
+
+<style></style>
